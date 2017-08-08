@@ -13,6 +13,13 @@
 		8987AB631F395C4000288CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB611F395C4000288CF9 /* Main.storyboard */; };
 		8987AB651F395C4000288CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB641F395C4000288CF9 /* Assets.xcassets */; };
 		8987AB681F395C4000288CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB661F395C4000288CF9 /* LaunchScreen.storyboard */; };
+		8987AB791F395D6000288CF9 /* gesture_indicator_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB731F395D6000288CF9 /* gesture_indicator_normal@2x.png */; };
+		8987AB7A1F395D6000288CF9 /* gesture_indicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB741F395D6000288CF9 /* gesture_indicator_selected@2x.png */; };
+		8987AB7B1F395D6000288CF9 /* gesture_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB751F395D6000288CF9 /* gesture_normal@2x.png */; };
+		8987AB7C1F395D6000288CF9 /* gesture_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB761F395D6000288CF9 /* gesture_selected@2x.png */; };
+		8987AB7D1F395D6000288CF9 /* PZXGesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987AB781F395D6000288CF9 /* PZXGesViewController.m */; };
+		8987AB801F3963A900288CF9 /* PZXGestureUnlockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8987AB7F1F3963A900288CF9 /* PZXGestureUnlockIndicator.m */; };
+		8987AB821F39AA8F00288CF9 /* vDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8987AB811F39AA8F00288CF9 /* vDemo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		8987AB641F395C4000288CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8987AB671F395C4000288CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8987AB691F395C4000288CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8987AB731F395D6000288CF9 /* gesture_indicator_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_indicator_normal@2x.png"; sourceTree = "<group>"; };
+		8987AB741F395D6000288CF9 /* gesture_indicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_indicator_selected@2x.png"; sourceTree = "<group>"; };
+		8987AB751F395D6000288CF9 /* gesture_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_normal@2x.png"; sourceTree = "<group>"; };
+		8987AB761F395D6000288CF9 /* gesture_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_selected@2x.png"; sourceTree = "<group>"; };
+		8987AB771F395D6000288CF9 /* PZXGesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXGesViewController.h; sourceTree = "<group>"; };
+		8987AB781F395D6000288CF9 /* PZXGesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXGesViewController.m; sourceTree = "<group>"; };
+		8987AB7E1F3963A900288CF9 /* PZXGestureUnlockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXGestureUnlockIndicator.h; sourceTree = "<group>"; };
+		8987AB7F1F3963A900288CF9 /* PZXGestureUnlockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXGestureUnlockIndicator.m; sourceTree = "<group>"; };
+		8987AB811F39AA8F00288CF9 /* vDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vDemo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 		8987AB571F395C3F00288CF9 /* PZXGestureUnlock */ = {
 			isa = PBXGroup;
 			children = (
+				8987AB6F1F395C6E00288CF9 /* PZXGestureUnlockView */,
 				8987AB5B1F395C3F00288CF9 /* AppDelegate.h */,
 				8987AB5C1F395C4000288CF9 /* AppDelegate.m */,
 				8987AB5E1F395C4000288CF9 /* ViewController.h */,
@@ -77,6 +94,22 @@
 				8987AB591F395C3F00288CF9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8987AB6F1F395C6E00288CF9 /* PZXGestureUnlockView */ = {
+			isa = PBXGroup;
+			children = (
+				8987AB811F39AA8F00288CF9 /* vDemo.gif */,
+				8987AB731F395D6000288CF9 /* gesture_indicator_normal@2x.png */,
+				8987AB741F395D6000288CF9 /* gesture_indicator_selected@2x.png */,
+				8987AB751F395D6000288CF9 /* gesture_normal@2x.png */,
+				8987AB761F395D6000288CF9 /* gesture_selected@2x.png */,
+				8987AB7E1F3963A900288CF9 /* PZXGestureUnlockIndicator.h */,
+				8987AB7F1F3963A900288CF9 /* PZXGestureUnlockIndicator.m */,
+				8987AB771F395D6000288CF9 /* PZXGesViewController.h */,
+				8987AB781F395D6000288CF9 /* PZXGesViewController.m */,
+			);
+			path = PZXGestureUnlockView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +143,7 @@
 				TargetAttributes = {
 					8987AB541F395C3F00288CF9 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 55V9K2V9Z4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,9 +171,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8987AB821F39AA8F00288CF9 /* vDemo.gif in Resources */,
 				8987AB681F395C4000288CF9 /* LaunchScreen.storyboard in Resources */,
 				8987AB651F395C4000288CF9 /* Assets.xcassets in Resources */,
 				8987AB631F395C4000288CF9 /* Main.storyboard in Resources */,
+				8987AB7B1F395D6000288CF9 /* gesture_normal@2x.png in Resources */,
+				8987AB7A1F395D6000288CF9 /* gesture_indicator_selected@2x.png in Resources */,
+				8987AB791F395D6000288CF9 /* gesture_indicator_normal@2x.png in Resources */,
+				8987AB7C1F395D6000288CF9 /* gesture_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8987AB601F395C4000288CF9 /* ViewController.m in Sources */,
+				8987AB7D1F395D6000288CF9 /* PZXGesViewController.m in Sources */,
 				8987AB5D1F395C4000288CF9 /* AppDelegate.m in Sources */,
+				8987AB801F3963A900288CF9 /* PZXGestureUnlockIndicator.m in Sources */,
 				8987AB5A1F395C3F00288CF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55V9K2V9Z4;
 				INFOPLIST_FILE = PZXGestureUnlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pengzuxin.PZXGestureUnlock;
@@ -285,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55V9K2V9Z4;
 				INFOPLIST_FILE = PZXGestureUnlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pengzuxin.PZXGestureUnlock;

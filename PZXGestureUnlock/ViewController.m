@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PZXGesViewController.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)drawGestureButtonPressed:(UIButton *)sender {
+    
+    PZXGesViewController *vc = [[PZXGesViewController alloc]init];
+    vc.pzxUnlockType = PZXUnlockTypeCreatePwd;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
+- (IBAction)vaildGestureButtonPressed:(UIButton *)sender {
+    
+    PZXGesViewController *vc = [[PZXGesViewController alloc]init];
+    vc.pzxUnlockType = PZXUnlockTypeValidatePwd;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
+- (IBAction)deleteGestureButtonPressed:(UIButton *)sender {
+    
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"gesturePwd"];
+}
 
 @end
