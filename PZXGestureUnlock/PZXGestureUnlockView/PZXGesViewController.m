@@ -290,9 +290,10 @@
     }
 }
 
--(BOOL)isCreatePassWord{
++(BOOL)isCreatePassWord{
+    NSString *gesturePwd = [[NSUserDefaults standardUserDefaults] valueForKey:@"gesturePwd"];
     
-    if (_gesturePwd.length > 0) {
+    if (gesturePwd.length > 0) {
         return YES;
     }else{
         return  NO;

@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger,PZXUnlockType) {
 
 
 /// 是否创建了密码 true 为已创建  false 为未创建
--(BOOL)isCreatePassWord;
++(BOOL)isCreatePassWord;
 /// 删除手势
 +(void)deleteGesturePwd;
 
