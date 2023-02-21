@@ -290,6 +290,19 @@
     }
 }
 
+-(BOOL)isCreatePassWord{
+    
+    if (_gesturePwd.length > 0) {
+        return YES;
+    }else{
+        return  NO;
+    }
+    
+}
+
++(void)deleteGesturePwd{
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"gesturePwd"];
+}
 
 //抖动动画
 - (void)shakeAnimationForView:(UIView *)view

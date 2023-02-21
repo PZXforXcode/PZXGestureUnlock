@@ -29,20 +29,24 @@
 - (IBAction)drawGestureButtonPressed:(UIButton *)sender {
     
     PZXGesViewController *vc = [[PZXGesViewController alloc]init];
+    ///创建密码
     vc.pzxUnlockType = PZXUnlockTypeCreatePwd;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
     
 }
 - (IBAction)vaildGestureButtonPressed:(UIButton *)sender {
     
     PZXGesViewController *vc = [[PZXGesViewController alloc]init];
+    ///验证密码
     vc.pzxUnlockType = PZXUnlockTypeValidatePwd;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
     
 }
 - (IBAction)deleteGestureButtonPressed:(UIButton *)sender {
-    
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"gesturePwd"];
+    ///删除密码
+        [PZXGesViewController deleteGesturePwd];
 }
 
 @end
