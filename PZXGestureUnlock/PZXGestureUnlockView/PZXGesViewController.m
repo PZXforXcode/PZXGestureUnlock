@@ -242,6 +242,9 @@
                     [self presentViewController:alert animated:YES completion:nil];
 
                     [self dismissViewControllerAnimated:YES completion:^{
+                        if (self.PZXGesViewControllerBlock != nil) {
+                            self.PZXGesViewControllerBlock(true, PZXUnlockTypeCreatePwd);
+                        }
                         [self dismissViewControllerAnimated:YES completion:nil];
                     }];
                     //------------------------------------------------------------------------
@@ -265,6 +268,10 @@
             [self presentViewController:alert animated:YES completion:nil];
             
             [self dismissViewControllerAnimated:YES completion:^{
+                
+                if (self.PZXGesViewControllerBlock != nil) {
+                    self.PZXGesViewControllerBlock(true, PZXUnlockTypeValidatePwd);
+                }
                 [self dismissViewControllerAnimated:YES completion:nil];
             }];
             //------------------------------------------------------------------------

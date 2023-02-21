@@ -32,6 +32,9 @@
     ///创建密码
     vc.pzxUnlockType = PZXUnlockTypeCreatePwd;
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    vc.PZXGesViewControllerBlock = ^(BOOL isSuccess, PZXUnlockType pzxUnlockType) {
+        
+    };
     [self presentViewController:vc animated:YES completion:nil];
     
 }
@@ -41,6 +44,9 @@
     ///验证密码
     vc.pzxUnlockType = PZXUnlockTypeValidatePwd;
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    vc.PZXGesViewControllerBlock = ^(BOOL isSuccess, PZXUnlockType pzxUnlockType) {
+        
+    };
     [self presentViewController:vc animated:YES completion:nil];
     
 }
